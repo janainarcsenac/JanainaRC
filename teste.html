@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Mim</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .sobre-mim {
+      position: relative;
+      width: 100%;
+      height: 500px; /* Altura definida */
+      background: url('/img/Fundo SM.jpeg') no-repeat center center;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .sobre-mim-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* Efeito de escurecimento */
+    }
+
+    .sobre-mim-content {
+      position: relative;
+      max-width: 1080px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .foto {
+      flex: 1 1 300px; /* Área para foto */
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .foto img {
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .texto {
+       /* Área para texto */
+      text-align: left;
+      padding: 20px;
+      background: #5BAAA1;
+      color: #ffffff;
+      border-radius: 10px;
+      font-size: 20px;
+    }
+    #titulo-texto-1{
+        font-size: 30px;
+        margin-bottom: 15px;
+
+    }
+
+    @media (max-width: 1080px) {
+      .sobre-mim-content {
+        flex-direction: column;
+        align-items: center;
+      }
+      .sobre-mim {
+        height: auto;
+        padding-bottom: 15px;
+      }
+
+      .texto {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="sobre-mim">
+    <div class="sobre-mim-overlay"></div>
+    <div class="sobre-mim-content">
+      <div class="foto">
+        <img src="/img/Perfil.png" alt="Minha foto">
+      
+      <div class="texto">
+        <div id="titulo-texto-1">
+            <p><strong>Bem-vindo ao Meu Site!</strong></p>
+        </div>
+
+        <div>
+            </p>Sou Janaina Rodrigues Castro, designer em formação, focada em identidade visual e criação de conteúdos criativos. Combinando criatividade e técnica, transformo ideias em projetos únicos e cheios de personalidade. </p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+</body>
+</html>
